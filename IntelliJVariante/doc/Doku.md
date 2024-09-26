@@ -36,4 +36,8 @@ Hier werden alle Klassen dieses Programms analysiert.
 # Modul 2
 ## Video 1
 1. Die zentralen Konzepte sind Vererbung, Subtyping, Ersetzbarkeit und polymorphe Variablen.
-2. 
+2. Zu Beginn wird das Klassendiagramm erläutert. Es gibt die 3 Klassen Datenbank, DVD und CD. In der Datenbank können mehrere DVDs und mehrere CDs gespeichert werden.
+3. Die Klasse Datenbank hat als Datenfelder zwei ArrayLists von CD und DVD. (Parametrisierte Anwendung von generischen Datentypen)
+4. Anhand einer for-each-Schleife in auflisten() werden alle Inhalte beider ArrayLists ausgegeben.
+5. Die Kritik an diesem Modell ist, dass im Großen und Ganzen die gesamten Klassen CD und DVD den gleichen Inhalt haben.
+Video bei 8:20 angehalten.
