@@ -58,3 +58,4 @@ Hier werden alle Klassen dieses Programms analysiert.
 7. Der Zugriffsmodifikator **"protected"** lässt von außen keinen Zugriff zu, jedoch aus der Subklasse schon.
 
 ## Video 3
+Test
