@@ -39,5 +39,22 @@ Hier werden alle Klassen dieses Programms analysiert.
 2. Zu Beginn wird das Klassendiagramm erläutert. Es gibt die 3 Klassen Datenbank, DVD und CD. In der Datenbank können mehrere DVDs und mehrere CDs gespeichert werden.
 3. Die Klasse Datenbank hat als Datenfelder zwei ArrayLists von CD und DVD. (Parametrisierte Anwendung von generischen Datentypen)
 4. Anhand einer for-each-Schleife in auflisten() werden alle Inhalte beider ArrayLists ausgegeben.
-5. Die Kritik an diesem Modell ist, dass im Großen und Ganzen die gesamten Klassen CD und DVD den gleichen Inhalt haben.
-Video bei 8:20 angehalten.
+5. Die Kritik an diesem Modell ist, dass im Großen und Ganzen die gesamten Klassen CD und DVD den gleichen Inhalt haben, aber auch die Datenbank-Klasse (for-Schleifen).
+6. Subklassen erben alle Datenfelder und Methoden, fügen aber auch eigene hinzu.
+7. Konstruktoren müssen sich um ihre Datenfelder kümmern. Wenn sie vererbt würden, kann auch ein Teil davon mit "super", welcher immer an erster Stelle sein muss, an den Mutterklassenkonstruktor übergeben werden.
+8. Vererbung hilft bei der Wartung und Behebung von Fehlern, Vermeidung von Code-Duplikaten, Wiederverwendung und Erweiterbarkeit.
+9. Statt 2 separaten ArrayListe für CD und DVD kann in der Klasse Datenbank eine ArrayList für Medium verwendet werden und darin beide Unterklassen-Objekte gespeichert, weil beide auch **ein Medium** sind (Subtyping). 
+10. Ein CD-Objekt kann daher (als ein Objekt einer Subklasse) verwendet werden, wo Objekte eines Supertyps erwartet werden (Ersatzbarkeit). Daher sind Objektvariablen, wie z. B. CD auch **polymorph**. 
+11. Subtypen können an einen Supertyp zugewiesen werden, umgedreht funktioniert es aber nicht. Man kann aber auch **casten** mittels z. b. "Auto c = (Auto) new Fahrzeug v".
+12. Alle Klassen erben von **"Object"**. Daher sind alle Sammlungen polymorph in dem Sinn.
+
+## Video 2
+1. Es geht um Methoden-Polymorphie, statische/dynamische Typen, Methodenüberschreibungen, dynamische Methodensuche und protected-Zugriff.
+2. Vererbung ist eine Einbahnstraße. Superklasse weiß nichts über die Attribute der Unterklasse, umgekehrt schon.
+3. Jede Variable hat einen statischen (deklariert) und einen dynamischen (verwiesen) Typ.
+4. **"Überschreiben"** ist die Lösung, um das Problem von "ausgeben" zu beheben.
+5. Der Compiler sucht die richtige/gewünschte Methode in den Klassen mit den dynamischen Typen von unten nach oben.
+6. Nicht nur der Mutterklassenkonstruktor kann mit **"super"** aufgerufen werden, sondern jede überschriebene Methode, auch "ausgeben" oder "toString".
+7. Der Zugriffsmodifikator **"protected"** lässt von außen keinen Zugriff zu, jedoch aus der Subklasse schon.
+
+## Video 3
