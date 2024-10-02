@@ -58,4 +58,14 @@ Hier werden alle Klassen dieses Programms analysiert.
 7. Der Zugriffsmodifikator **"protected"** lässt von außen keinen Zugriff zu, jedoch aus der Subklasse schon.
 
 ## Video 3
-Test
+1. Es geht um die konstitutiven Teilkonzepte des Methodenpolymorphismus.
+2. Diese sind Vererbung, Überschreiben von Methoden (@Override), Ersetzbarkeit und dynamische Bindung.
+3. Bei einem Aufruf (m.anzeigen()) wird nicht automatisch die anzeigen-Methode von Medium (m) aufgerufen, sondern der Klassenbaum wird von unten nach oben abgegrast und die erste die gefunden wird, wird aufgerufen.
+
+## Video 4
+1. Es geht um die Vorgangsweise zum Aufbau einer polymorphen Codebasis.
+2. Man muss zuerst Vererbung einsetzen und dann eine Schnittstelle bereitstellen in den oberen Klassen. 
+3. Als Nächstes muss man Methoden mit subtypenabhängiger Funktionalität überschreiben. 
+4. Danach sollte man Entkopplung bzw. Ersetzbarkeit bei der Verwendung der polymorphen Klassenhierarchie verwenden.
+5. Jetzt sollte man eine dynamische Bindung nutzen (eigentlicher polymorpher Methodenaufruf).
+6. Wenn ich die Methodenfunktionalität der Mutterklasse zusätzlich benötige, kann ich diese einfach mit "super.methodenname();" aufrufen.
